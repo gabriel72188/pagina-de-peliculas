@@ -6,8 +6,8 @@ export const getEmbedUrl = (serverName, movie, season, episode) => {
   const imdbId = movie.imdb_id;
 
   // Formato de dos dígitos para cap y temp (aunque la temp no use el cero inicial en Embed69, lo dejamos preparado)
-  const safeEpisode = episode.toString().padStart(2, '0');
-  const safeSeason = season.toString();
+  const safeEpisode = (episode ?? 1).toString().padStart(2, '0');
+  const safeSeason = (season ?? 1).toString();
 
   // 1. Moe
   if (serverName === "Moe") {
