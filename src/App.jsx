@@ -3,7 +3,9 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MovieRow from './components/MovieRow';
-import WatchPage from './pages/WatchPage';
+import WatchMoviePage from './pages/WatchMoviePage';
+import TvShowHubPage from './pages/TvShowHubPage';
+import WatchSeriePage from './pages/WatchSeriePage';
 import SearchResults from './components/SearchResults';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
@@ -74,7 +76,9 @@ function App() {
                     )
                 } />
 
-                <Route path="/ver/:type/:id" element={<WatchPage />} />
+                <Route path="/ver/movie/:id" element={<WatchMoviePage />} />
+                <Route path="/ver/tv/:id" element={<TvShowHubPage />} />
+                <Route path="/ver/tv/:id/temporada/:season/capitulo/:episode" element={<WatchSeriePage />} />
 
             </Routes>
         </div>

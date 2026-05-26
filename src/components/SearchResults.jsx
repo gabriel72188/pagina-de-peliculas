@@ -76,7 +76,7 @@ const SearchResults = ({ query, onResultClick }) => {
                         disabled={page === 1}
                         className="bg-[#1f1f1f] hover:bg-blue-600 disabled:opacity-50 disabled:hover:bg-[#1f1f1f] disabled:cursor-not-allowed px-5 py-2 rounded-md font-bold transition flex items-center gap-2"
                     >
-                        ❮ Anterior
+                        ❮
                     </button>
                     <span className="text-gray-400 font-semibold text-sm">
                         Página {page} de {totalPages}
@@ -86,7 +86,7 @@ const SearchResults = ({ query, onResultClick }) => {
                         disabled={page === totalPages}
                         className="bg-[#1f1f1f] hover:bg-blue-600 disabled:opacity-50 disabled:hover:bg-[#1f1f1f] disabled:cursor-not-allowed px-5 py-2 rounded-md font-bold transition flex items-center gap-2"
                     >
-                        Siguiente ❯
+                        ❯
                     </button>
                 </div>
             )}
