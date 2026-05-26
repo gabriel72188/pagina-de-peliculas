@@ -80,7 +80,7 @@ const Navbar = ({ query, setQuery, onHomeClick }) => {
             className="text-xl font-bold text-blue-500 cursor-pointer tracking-tighter absolute left-1/2 -translate-x-1/2"
             onClick={onHomeClick}
           >
-            AUNSIN<span className="text-white">NOMBRE</span>
+            G<span className="text-white">MOVIES</span>
           </h1>
 
           {/* Search Button — Right */}
